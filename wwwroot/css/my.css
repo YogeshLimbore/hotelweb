@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: azure;
+}
+
+
+#Headr {
+    height: 20px;
+    background-color: #1ce7e7;
+    color: #FFD700;
+}
+
+#Navbar {
+    height: 60px;
+    background-color: coral;
+}
+
+#logo {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
+    border: 2px solid coral;
+    border-radius: 50%;
+    background-image: url("logo.png");
+    background-size: cover;
+}
+
+button {
+    background-color: rgb(10, 3, 0);
+}
+
+#BName {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+a {
+    margin-left: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+
+.ContentBox {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: rgba(255, 0, 0, 0.5)
+}
+
+#Box1 {
+    position: relative;
+    bottom: 18.5px;
+    background-image: url("/images/fish.jpg");
+    background-size: cover;
+}
+
+#Box2 {
+    position: relative;
+    background-image: url("/images/Vaam.jpg");
+    background-size: cover;
+}
+
+#Box3 {
+    position: relative;
+    background-image: url("/images/soybin.jpg");
+    background-size: cover;
+}
+
+#Box4 {
+    position: relative;
+    bottom: 18.5px;
+    background-image: url("/images/thali.jpg");
+    background-size: cover;
+}
+
+
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+}
+
+@media (min-width: 576px) {
+    .container-sm, .container {
+    
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md, .container-sm, .container {
+     
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+      
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+   
+    }
+}
+
+
+
+.Content {
+    height: 1200px;
+    background-image: url("/images/hotel.jpg");
+    background-size: cover;
+}
+
+#Services {
+    display: block;
+    position: relative;
+    left: 50px;
+    text-align: center;
+    height: 300px;
+    width: 350px;
+}
+
+#About {
+    display: block;
+    position: relative;
+    left: 990px;
+    text-align: right;
+    height: 300px;
+    width: 350px;
+}
+
+
+
+h1 {
+    color: #EB3467;
+    text-align: center;
+}
+
+
+
+footer {
+    color: chocolate;
+    background-color: black;
+    text-align: center;
+}

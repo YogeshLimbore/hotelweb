@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - hotel</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/hotel.styles.css" asp-append-version="true" />
+    <link href="~/css/my.css" rel="stylesheet" />
+    @await RenderSectionAsync("CustomCSS", required: false)
+</head>
+<body>
+    <header>
+        <div id="Headr"> <marquee>Welcome to Hotel Yogesh & Bar |     Welcome to Hotel Yogesh & Bar |    Welcome to Hotel Yogesh & Bar |    Welcome to Hotel Yogesh & Bar |    Welcome to Hotel Yogesh & Bar |    Welcome to Hotel Yogesh & Bar |    Welcome to Hotel Yogesh & Bar | </marquee> </div>
+
+        <div id="Navbar">
+            <div id="logo"></div>
+            <a id="BName">Hotel Yogesh & Bar</a>
+            <a asp-area="" asp-controller="Home" asp-action="index">Home</a>
+            <a asp-area="" asp-controller="Home" asp-action="Account">Account</a>
+            <a asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+            <a asp-area="" asp-controller="Home" asp-action="Menu">Menu</a>
+            <a asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+            <a asp-area="" asp-controller="Demo" asp-action="Test">Test</a>
+            <a asp-area="" asp-controller="Home" asp-action="Cart">Cart</a>
+             <input placeholder="Search Item">
+            <button>Search</button>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        Made with &hearts; by Yogesh <br>
+        &#169; 2016-2024, hotelYogesh.com, Inc
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("CustomJs", required: false)
+</body>
+</html>

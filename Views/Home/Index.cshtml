@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section CustomCSS{
+    <link href="~/css/my.css" rel="stylesheet" />
+}
+
+<body>
+    <div class="Content">
+
+        <div class="ContentBox" id="Box1">@Model.pType</div>
+        <div class="ContentBox" id="Box2">special fish dishes</div>
+        <div class="ContentBox" id="Box3">special veg dishes</div>
+        <div class="ContentBox" id="Box4">special combo</div>
+            this is product @Model.pType <br />
+            and it is @Model.productName
+
+        
+
+        <div id="Services">
+            <h1>Services</h1>
+            <p>
+                We are the best in market who provide best qualitiy of Veg and Non-veg food, as well as all type of Drinks like Vodka , Rum, Whisky, Beer, Wine, Brandy , Scotch Whisky with Good service.
+
+            </p>
+        </div>
+
+
+        <div id="About">
+            <h1>About us</h1>
+            <p>
+                We are the best in market who provide best qualitiy of Veg and Non-veg food,
+                and we are specialiest in non veg sea food like fish , crabs , and all type of non-veg food like chicken ,mutton with good services.
+            </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
